@@ -24,6 +24,7 @@ RUN yum install -y epel-release \
  && yum clean all \
  && pip install supervisor && pip install --upgrade meld3==0.6.10 && mkdir /etc/supervisord.d \
  && rm -rf /root/.cache
+ && cat /usr/share/zoneinfo/Asia/Seoul > /etc/localtime
 
 # 4. Install supervisord config
 ADD conf/supervisord.conf /etc/supervisord.d/supervisord.conf
