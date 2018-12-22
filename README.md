@@ -11,9 +11,12 @@ Base Dockerfile (https://bitbucket.org/bashell-com/spacewalk)
 # Use spacewalk-docker-img 
 
 * Build
+Docker image Build Command
 ~~~bash
 docker build --rm -t spacewalk .
+
 * Run
+Docker image Run Command
 ~~~bash
 docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 spacewalk
 
