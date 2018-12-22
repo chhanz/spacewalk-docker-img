@@ -23,7 +23,9 @@ docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 spacewalk
 ~~~
 
 # Volume List 
-/var/log System log
-/var/lib/pgsql/data PostgreSQL data
-/var/satellite RPM repository
-/var/www/html/pub Bootstrap directory
+~~~bash
+/var/log ## System log
+/var/lib/pgsql/data ## PostgreSQL data
+/var/satellite ## RPM repository
+/var/www/html/pub ## Bootstrap directory
+~~~
