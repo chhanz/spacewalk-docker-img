@@ -23,7 +23,7 @@ RUN yum install -y epel-release \
  && yum install -y spacewalk-setup-postgresql spacewalk-postgresql tomcat-native python-setuptools python-pip \
  && yum clean all \
  && pip install supervisor && pip install --upgrade meld3==0.6.10 && mkdir /etc/supervisord.d \
- && rm -rf /root/.cache
+ && rm -rf /root/.cache \
  && cat /usr/share/zoneinfo/Asia/Seoul > /etc/localtime
 
 # 4. Install supervisord config
