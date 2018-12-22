@@ -14,6 +14,7 @@ Base Dockerfile (https://bitbucket.org/bashell-com/spacewalk)
 Docker image Build Command
 ~~~bash
 docker build --rm -t spacewalk .
+~~~
 
 * Run
 Docker image Run Command
