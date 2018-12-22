@@ -5,7 +5,7 @@
 # docker build --rm -t spacewalk .
 #
 # - Run
-# docker run --privileged=true -d --name="spacewalk" -h "spackewalk" spacewalk
+# docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 spacewalk
 
 # 1. Base images
 FROM     centos:6
