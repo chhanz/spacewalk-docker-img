@@ -10,19 +10,19 @@ Base Dockerfile (https://bitbucket.org/bashell-com/spacewalk)
 
 # Use spacewalk-docker-img 
 
-* Build
+## Build
 Docker image Build Command
 ~~~bash
 docker build --rm -t spacewalk .
 ~~~
 
-* Run
-** Docker image Run Command
+## Run
+### Docker image Run Command
 ~~~bash
 docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 spacewalk
 ~~~
 
-** Host Volume Attach Command
+### Host Volume Attach Command
 ~~~bash
 docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 -v /data/var/log:/var/log -v /data/var/lib/pgsql/data:/var/lib/pgsql/data -v /data/var/satellite:/var/satellite -v /data/var/www/html/pub:/var/www/html/pub spacewalk
 ~~~
