@@ -7,6 +7,7 @@ Base Dockerfile (https://bitbucket.org/bashell-com/spacewalk)
   - Change repo file
   - spacewalk-setup answer file fix
   - Add spacewalk-service status 
+  - Change Spacewalk.sh
 
 # Use spacewalk-docker-img 
 
@@ -61,7 +62,7 @@ chmod 777 /(host directory)/var/log/tomcat6 ## change permission
 ~~~
 
 If, can not start httpd
-~~bash
+~~~bash
 mkdir /(host directory)/var/log/httpd  ## create httpd log directory
 chmod 777 /(host directory)/var/log/httpd ## change own
 ~~~
