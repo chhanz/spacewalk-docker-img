@@ -52,7 +52,7 @@ chmod 777 -R /data/var
 # Known Issue - Volume attach
 If, can not install pgsql
 ~~~bash
-chown 26:26 /(host directoty)/var/lib/pgsql/data ## change own
+chown 26:26 /(host directoty)/var/lib/pgsql/data ## change owner
 ~~~
 
 If, can not start tomcat
@@ -64,5 +64,5 @@ chmod 777 /(host directory)/var/log/tomcat6 ## change permission
 If, can not start httpd
 ~~~bash
 mkdir /(host directory)/var/log/httpd  ## create httpd log directory
-chmod 777 /(host directory)/var/log/httpd ## change own
+chmod 777 /(host directory)/var/log/httpd ## change permission
 ~~~
