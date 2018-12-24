@@ -35,9 +35,15 @@ docker run --privileged=true -d --name="spacewalk" -p 80:80 -p 443:443 -v /data/
 /var/www/html/pub ## Bootstrap directory
 ~~~
 
-# Known Tomcat Install Issue
-If, Wait for tomcat Service ......... ing......
+# Known Issue - Volume attach
+If, can not start tomcat
 ~~~bash
 mkdir /(host directory)/var/log/tomcat6  ## create tomcat log directory 
 chmod 777 /(host directory)/var/log/tomcat6 ## change own
+~~~
+
+If, can not start httpd
+~~bash
+mkdir /(host directory)/var/log/httpd  ## create httpd log directory
+chmod 777 /(host directory)/var/log/httpd ## change own
 ~~~
