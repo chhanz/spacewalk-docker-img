@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! [ -f "/var/lib/pgsql/data/postgresql.conf" ]; then
+if [ -f "/var/lib/pgsql/data/postgresql.conf" ]; then
 
 	echo "* * * * * * REDEPOLY SPACEWALK SETUP * * * * *"
 	spacewalk-setup --skip-db-install --skip-db-population --non-interactive --answer-file=/opt/answer.txt
