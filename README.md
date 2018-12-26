@@ -3,11 +3,12 @@
 Base Dockerfile (https://bitbucket.org/bashell-com/spacewalk)
 
 # Change Logs
-  - Spacewalk latest version
-  - Change repo file
-  - spacewalk-setup answer file fix
-  - Add spacewalk-service status 
-  - Change Spacewalk.sh
+  - Update Spacewalk latest version
+  - Change repository file
+  - Fix Answer File of spacewalk-setup
+  - Add spacewalk-status Check Line
+  - Add supervisord loglevel='debug'
+  - Change Spacewalk.sh 
 
 # Use spacewalk-docker-img 
 
@@ -51,18 +52,18 @@ chmod 777 -R /data/var
 ~~~
 
 # Known Issue - Volume attach
-If, can not install pgsql
+If you can not install pgsql then run following command
 ~~~bash
 chown 26:26 /(host directoty)/var/lib/pgsql/data ## change owner
 ~~~
 
-If, can not start tomcat
+If you can not start tomcat then run following command
 ~~~bash
 mkdir /(host directory)/var/log/tomcat6  ## create tomcat log directory 
 chmod 777 /(host directory)/var/log/tomcat6 ## change permission
 ~~~
 
-If, can not start httpd
+If you can not start httpd then run following command
 ~~~bash
 mkdir /(host directory)/var/log/httpd  ## create httpd log directory
 chmod 777 /(host directory)/var/log/httpd ## change permission
